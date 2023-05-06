@@ -1,0 +1,74 @@
+<header class="header">
+  <div class="header__container">
+    <div class="header__logo">
+      <a href="#" class="logo">
+        <img src="assets/images/logo.svg" alt="" />
+      </a>
+    </div>
+    <div class="header__menu">
+      <ul class="menu">
+        <li class="menu__item" (click)="onDropdownToggle($event)">
+          <a class="menu__link" href="#"
+            ><span class="menu__link-text">Ideen</span
+            ><img src="assets/images/arrowD.svg" alt=""
+          /></a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#"
+            ><span class="menu__link-text">Wochenplan</span></a
+          >
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#"
+            ><span class="menu__link-text">Shop</span></a
+          >
+        </li>
+        <li class="menu__item menu__item--active">
+          <a class="menu__link" href="#"
+            ><span class="menu__link-text">Main Bereich</span></a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="header__search">
+      <div class="search">
+        <input type="text" placeholder="Lerninhalt suchen ..." /><img
+          class="search__img"
+          src="assets/images/magnifierHeader.svg"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="header__burger">
+      <div class="burger"></div>
+    </div>
+  </div>
+  <div *ngIf="isDropdown" class="dropdown">
+    <div class="dropdown__container">
+      <div class="dropdown__descr">
+        <div class="dropdown-title">
+          <span>Mit welcher Idee möchtest du anfangen?</span>
+        </div>
+      </div>
+      <div class="dropdown__menu">
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              <span class="menu__link-text">Beschäftigungsart</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              <span class="menu__link-text">Themenwelt</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              <span class="menu__link-text">Förderschwerpunkte</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>

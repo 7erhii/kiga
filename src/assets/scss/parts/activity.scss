@@ -1,0 +1,61 @@
+.activity {
+  &__title {
+    p {
+      font-family: "Caraque", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: em(93);
+
+      @include mobile {
+        font-size: em(43);
+        line-height: em(50, 43);
+      }
+    }
+  }
+
+  &__menu-list {
+    display: flex;
+    gap: em(26);
+    padding-top: em(20);
+
+    @include mobile {
+      padding-top: em(10);
+    }
+  }
+  &__menu-item {
+    position: relative;
+    padding-right: em(20);
+
+    span {
+      font-family: "Quicksand", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: em(35);
+      color: #01723c;
+
+      @include mobile {
+        font-size: em(15);
+        line-height: em(19, 15);
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__menu-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    height: 100%;
+    width: em(2);
+    background-color: #01723c;
+
+    @include mobile {
+      width: em(1);
+    }
+  }
+}

@@ -1,0 +1,94 @@
+.newsletter {
+  margin-top: em(220);
+
+  @include mobile {
+    margin-top: em(78);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: em(800);
+    margin: 0 auto;
+    padding: 0 em(15);
+  }
+  &__header {
+    width: 100%;
+    h2 {
+      font-family: "Caraque", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: em(53);
+      line-height: em(63, 53);
+      text-align: center;
+      color: #2e2e2e;
+
+      @include mobile {
+        font-size: em(23);
+        line-height: em(27, 23);
+        text-align: left;
+      }
+    }
+  }
+  &__subheader {
+    margin-top: em(44);
+
+    @include mobile {
+      margin-top: em(30);
+    }
+
+    p {
+      font-family: "Quicksand", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: em(29);
+      line-height: em(36, 29);
+      text-align: center;
+
+      @include mobile {
+        font-size: em(15);
+        line-height: em(19, 15);
+        text-align: left;
+      }
+    }
+  }
+
+  &__input {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-image: url("/assets/images/Ebene_1.svg");
+    background-size: cover;
+
+    padding: 0 em(15);
+    padding-bottom: em(230);
+    margin-top: em(50);
+
+    @include mobile {
+      margin-top: em(20);
+      padding-bottom: em(120);
+    }
+
+    input {
+      margin-top: em(14, 22);
+      padding: em(26, 22) em(36, 22);
+      width: em(530, 22);
+      font-family: "Quicksand", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: em(22);
+      line-height: em(28, 22);
+      color: rgba(0, 0, 0, 0.35);
+      border: none;
+      outline: none;
+      border: 1px solid rgba(73, 73, 73, 0.17);
+      border-radius: 16px;
+
+      @include mobile {
+        padding: em(15, 22) em(20, 22);
+      }
+    }
+  }
+}

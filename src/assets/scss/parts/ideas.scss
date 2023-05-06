@@ -1,0 +1,11 @@
+.ideas {
+  margin-top: em(194);
+  .swipe-item {
+    background-image: url("/assets/images/children-explore.png");
+    background-repeat: no-repeat;
+  }
+
+  @include mobile {
+    margin-top: em(120);
+  }
+}

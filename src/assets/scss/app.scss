@@ -1,0 +1,28 @@
+$selectionColor: #23a6d5;
+$pagecolor: rgb(13, 16, 36);
+
+// Core
+@import "core/mixins";
+@import "core/reset";
+@import "core/fonts";
+@import "core/base";
+
+// Parts
+@import "parts/page";
+@import "parts/header";
+@import "parts/dropdown";
+@import "parts/hero";
+@import "parts/daily";
+@import "parts/ideas";
+@import "parts/swipe";
+@import "parts/employment";
+@import "parts/themed";
+@import "parts/funding";
+@import "parts/diversity";
+
+@import "parts/activity";
+@import "parts/newsletter";
+@import "parts/footer";
+
+@import "parts/wrapper";
+
