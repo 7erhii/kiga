@@ -33,13 +33,15 @@
     
     <div class="header__search">
       <div class="search">
-        <input type="text" placeholder="Lerninhalt suchen ..." /><img
+        <input #searchInput type="text" placeholder="Lerninhalt suchen ..." 
+        (focus)="toggleHeaderPopup()" 
+        (blur)="toggleHeaderPopup()" /><img
           class="search__img"
           src="assets/images/magnifierHeader.svg"
           alt=""
         />
       </div>
-      <div class="header__popup">
+      <div #headerPopup class="header__popup">
         <div class="header__popup-results">
           <div class="header__popup-result">
             <div class="header__popup-result-title">
@@ -53,12 +55,11 @@
             <div class="header__popup-extra-title">
               <span>Kategorien</span>
             </div>
-            <div class="header__popup-extra-title">
+            <div class="header__popup-extra-btn">
               <span>Erweiterte Suche</span>
             </div>
           </div>
         </div>
-        <span>agaelrgm;lerng;lerng</span>
       </div>
     </div>
     <div class="header__burger">
