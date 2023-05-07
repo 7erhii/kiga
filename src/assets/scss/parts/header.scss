@@ -181,7 +181,11 @@
     width: 100%;
     border-radius: em(16);
     padding-right: 0;
-
+    outline: none;
+    &:focus-within {
+      background: #E4F0EA
+      ;
+    }
 
   }
 
@@ -189,6 +193,10 @@
     padding-left: em(10);
     padding-right: em(20);
     cursor: pointer;
+  }
+  &:focus-within {
+    background: #E4F0EA
+    ;
   }
 }
 
@@ -275,3 +283,4 @@
     padding-left: em(88);
   }
 }
+
