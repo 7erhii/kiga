@@ -30,6 +30,7 @@
         </li>
       </ul>
     </div>
+    
     <div class="header__search">
       <div class="search">
         <input type="text" placeholder="Lerninhalt suchen ..." /><img
@@ -38,9 +39,33 @@
           alt=""
         />
       </div>
+      <div class="header__popup">
+        <div class="header__popup-results">
+          <div class="header__popup-result">
+            <div class="header__popup-result-title">
+              <span>Themenwelt</span>
+            </div>
+            <div class="header__popup-result-subtitle">
+              <span>Lorem ipsum</span>
+            </div>
+          </div>
+          <div class="header__popup-extra">
+            <div class="header__popup-extra-title">
+              <span>Kategorien</span>
+            </div>
+            <div class="header__popup-extra-title">
+              <span>Erweiterte Suche</span>
+            </div>
+          </div>
+        </div>
+        <span>agaelrgm;lerng;lerng</span>
+      </div>
     </div>
     <div class="header__burger">
-      <div class="burger"></div>
+      <div class="burger__btn" (click)="onBurgerClick()">
+        <img class="burger__img" [class.active]="isActive" src="assets/images/burger-open.svg" alt="" />
+        <img class="burger__img" [class.active]="!isActive" src="assets/images/burger-close.svg" alt="" />
+      </div>
     </div>
   </div>
   <div *ngIf="isDropdown" class="dropdown">

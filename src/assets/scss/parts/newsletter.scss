@@ -34,9 +34,12 @@
   }
   &__subheader {
     margin-top: em(44);
+    width: 100%;
 
     @include mobile {
       margin-top: em(30);
+      text-align: left;
+
     }
 
     p {
@@ -55,9 +58,9 @@
     }
   }
 
-  &__input {
+  &__serch {
     display: flex;
-    justify-content: space-around;
+    // justify-content: space-around;
     width: 100%;
     background-image: url("/assets/images/Ebene_1.svg");
     background-size: cover;
@@ -66,29 +69,52 @@
     padding-bottom: em(230);
     margin-top: em(50);
 
+
+    
+
     @include mobile {
       margin-top: em(20);
       padding-bottom: em(120);
     }
 
-    input {
-      margin-top: em(14, 22);
+  }
+
+  &__input {
+      display: flex;
+      margin: 0 auto;
+      width: em(530);
+      line-height: em(28);
+      border: none;
+      outline: none;
+      border: 1px solid rgba(73, 73, 73, 0.17);
+      border-radius: 16px;
+      background: #fff;
+
+      @include mobile {
+        
+      }
+      input {
+      padding-top: em(14, 22);
       padding: em(26, 22) em(36, 22);
-      width: em(530, 22);
+      width: 100%;
       font-family: "Quicksand", sans-serif;
       font-style: normal;
       font-weight: 500;
       font-size: em(22);
       line-height: em(28, 22);
       color: rgba(0, 0, 0, 0.35);
+      
       border: none;
       outline: none;
-      border: 1px solid rgba(73, 73, 73, 0.17);
-      border-radius: 16px;
-
+      border-radius: 16px 0 0 16px;
       @include mobile {
-        padding: em(15, 22) em(20, 22);
+        padding: em(15, 15) em(20, 15);
+        font-size: em(15);
+        line-height: em(19, 15);
       }
-    }
+      
+      }
+      
   }
 }
+

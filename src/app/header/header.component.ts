@@ -7,9 +7,15 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   isDropdown = false;
+  isActive = false;
 
   onDropdownToggle(event: Event) {
     event.preventDefault();
     this.isDropdown = !this.isDropdown;
   }
+
+  onBurgerClick(){
+    this.isActive = !this.isActive;
+  }
+
 }

@@ -1,0 +1,56 @@
+.burger {
+    &__block {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 30;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    cursor: pointer;
+    &__block {
+        max-width: em(556);
+        width: 100%;
+        background: rgba(1, 114, 59, 0.8);
+        border-radius: 0 0 0 30px;
+        
+    }
+    &__menu {
+        padding-top: em(9);
+        padding-bottom: em(130);
+        padding-left: em(82);
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+    &__item {
+        position: relative;
+        padding: em(20) 0;
+        cursor: pointer;
+        span {
+            font-family: 'Caraque', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: em(29);
+            line-height: em(34, 29);
+
+            color: #FFFFFF;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+
+            width: em(76);
+            height: em(3);
+            border-radius: em(6);
+            background: #FFC700;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+}
